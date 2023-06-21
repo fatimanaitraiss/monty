@@ -1,23 +1,27 @@
 #include "monty.h"
 
-int i=1;
-
 /**
- * main - Entry point of the program.
+ * main - entry point of our monty program
+ * @argc: the amount of arguments given to the program
+ * @argv: the array of arguments given to the program
  *
- * @argc: Argument count.
- * @argv: Argument vector.
- * Return: Always 0.
+ * Return: EXIT_SUCCESS if no error has occures, otherwise EXIT_FAILURE
  */
 
 int main(int argc, char **argv)
 {
-stack_t *head;
-(void)(argc), (void)(argv);
+	FILE *fp;
 
-head = NULL;
-check_args(argc);
-file_mode(argv[1], &head);
-free_dlistint(&head);
-return (0);
+	META.error = 0;
+	META.state = STACK;
+
+	if (handle_input(argc, argv, &fp) == 1 || monty_run(fp) == 1)
+	{
+		if (fp)
+			fclose(fp);
+		exit(EXIT_FAILURE);
+	}
+
+	fclose(fp);
+	return (EXIT_SUCCESS);
 }
