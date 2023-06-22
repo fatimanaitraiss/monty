@@ -18,7 +18,7 @@ stack_t *first, *last;
 
 if ((*stack == NULL) || ((*stack)->next == NULL))
 {
-		;
+;
 }
 else
 {
