@@ -63,20 +63,20 @@ new_top->next = *stack;
 int _isdigit(char *str)
 {
 
-int n = 0;
+int i = 0;
 
 
-if (str[n] == '-')
+if (str[i] == '-')
 {
-n++;
+i++;
 }
-while (str[n] != '\0')
+while (str[i] != '\0')
 {
-if (!isdigit(str[n]))
+if (!isdigit(str[i]))
 {
 return (1);
 }
-n++;
+i++;
 }
 
 return (0);
