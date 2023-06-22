@@ -21,7 +21,7 @@ instruction_t operation[] = {
 {"swap", get_swap},
 {"pop", get_pop},
 {"sub", get_sub},
-{"dev", get_dev},
+{"div", get_dev},
 {"mul", get_mul},
 {"mod", get_mod},
 {"nop", get_nop},
