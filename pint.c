@@ -18,5 +18,5 @@ fclose(file);
 get_free(*stack);
 exit(EXIT_FAILURE);
 }
-printf("%d\n", (*stack)->i);
+printf("%d\n", (*stack)->n);
 }
