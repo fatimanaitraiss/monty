@@ -9,6 +9,11 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
+#define STACK 0
+#define QUEUE 1
+#define DELIMS "\n\t\a\b"
+
+
 extern FILE *file;
 FILE *file;
 
