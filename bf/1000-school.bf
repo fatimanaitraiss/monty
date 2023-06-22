@@ -1,22 +1,20 @@
-+++++++++           c0 = 9
-[                   Start loop
-    >++++++++       Forward to c1 and add 8
-    <-              Back to c0 subtract 1
-]                   Repeat until = 0
->.                  Forward to c1 and print (c0 = 72 = 'H')
-[-]                 Decrement c1 until 0
-+++++++++++         c0 = 11
-[                   Start loop
-    >++++++++++     Forward to c1 and add 10
-    <-              Back to c0 and subtract 1
-]                   Repeat (until c1 = 110)
->+.                 Forward to c1 add 1 and print (c1 = 111 = 'o')
----.                Subtract 3 to c1 and print (c1 = 108 = 'l')
-----------.         Subtract 10 to c1 and print (c1 = 98 = 'b')
-+++.                Add 3 to c1 and print (c1 = 101 = 'e')
-+++++++++++++.      Add 13 to c1 and print (c1 = 114 = 'r')
-++.                 Add 2 to c1 and print (c1 = 116 = 't')
------.              Subtract 5 to c1 and print (c1 = 111 = 'o')
--.                  Subtract 1 to c1 and print (c1 = 110 = 'n')
-[-]                 Subtract 1 to c1 until c1 = 0
-++++++++++.         Add 10 to c1 and print (c1 = 10 = '\n')
+						set up cell blocks 0 | 70 | 100 | 10:
++++++ +++++				cell 0: initialize counter to 10
+[						set loop
+	> +++++ ++			cell 1: add 7
+	> +++++ +++++		cell 2: add 10
+	> +					cell 3: add 1
+	<<< -				decrease counter to cell 0
+]						end loop
+
+						print to standard out:
+> ++ .					putchar H (70 plus 2 = 72)
+> +++++ +++++ +.		putchar o (100 plus 11 = 111)
+--- .					putchar l (111 minus 3 = 107)
+----- ----- .			putchar b (108 minus 10 = 98)
++++ .					putchar e (98 plus 3 = 101)
++++++ +++++ +++ .		putchar r (101 plus 13 = 114)
+++ .					putchar t (114 plus 2 = 116)
+----- .					putchar o (116 minus 5 = 111)
+- .						putchar n (111 minus 1 = 110)
+> .						putchar \n (10)
