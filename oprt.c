@@ -2,7 +2,7 @@
 
 /**
  * calc - Arithmetic operations
- *
+ * This function calculates arithmetic operations using two operands and an operator
  * @op_f: Char pointer
  * @l: line
  * @stak: stack
@@ -10,7 +10,7 @@
  */
 
 
-void (*calc(char *op_f, unsigned int i, stack_t **stak))(stack_t**, unsigned int)
+void(*calc(char *op_f, unsigned int l, stack_t **stak))(stack_t**, unsigned int)
 {
 int count;
 
@@ -39,7 +39,7 @@ if (strcmp(operation[count].opcode, op_f) == 0)
 return (operation[count].f);
 }
 }
-fprintf(stderr, "L%u: unknown instruction %s\n", i, op_f);
+fprintf(stderr, "L%u: unknown instruction %s\n", l, op_f);
 fclose(file);
 get_free(*stak);
 exit(EXIT_FAILURE);
