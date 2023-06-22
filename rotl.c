@@ -10,7 +10,7 @@
  * 2. upon fail, EXIT_FAILURE
  */
 
-void _rotl(stack_t **stack, unsigned int line_number)
+void get_rotl(stack_t **stack, unsigned int line_number)
 {
 stack_t *first, *last;
 

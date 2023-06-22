@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pchar - function prints the char at the top of the stack
+ * get_pchar - function prints the char at the top of the stack
  * @stack: pointer to the head of the stack
  * @line_number: Line number where the instruction appears
  * Return:
@@ -10,7 +10,7 @@
  * Notes: This function is part of the 11. pchar operation
  */
 
-void _pchar(stack_t **stack, unsigned int line_number)
+void get_pchar(stack_t **stack, unsigned int line_number)
 {
 if ((stack == NULL) || ((*stack) == NULL))
 {

@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _mod - function finds the modulus of top two elements
+ * get_mod - function finds the modulus of top two elements
  * @stack: pointer to the top of the stack
  * @line_number: Line number where the operation is performed
  * Return:
@@ -9,7 +9,7 @@
  * 2. upon failure, EXIT_FAILURE
  */
 
-void _mod(stack_t **stack, unsigned int line_number)
+void get_mod(stack_t **stack, unsigned int line_number)
 {
 stack_t *first, *second;
 
