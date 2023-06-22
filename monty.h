@@ -65,7 +65,11 @@ void _rotr(stack_t **stack, unsigned int line_number);
 void _pstr(stack_t **stack, unsigned int line_number);
 void get_free(stack_t *stack);
 void (*operator_function)(stack_t **, unsigned int);
+<<<<<<< HEAD
 void (*calc(char *op_f, unsigned int i, stack_t **s))(stack_t**, unsigned int);
+=======
+void (*calc(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
+>>>>>>> 18faa900cb82210a0e6ff71db88022b2d4f7ff50
 int _isdigit(char *str);
 
 
