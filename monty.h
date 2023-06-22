@@ -56,7 +56,7 @@ void get_swap(stack_t **stack, unsigned int line_number);
 void get_add(stack_t **stack, unsigned int line_number);
 void get_nop(stack_t **stack, unsigned int line_number);
 void get_sub(stack_t **stack, unsigned int line_number);
-void get_div(stack_t **stack, unsigned int line_number);
+void get_dev(stack_t **stack, unsigned int line_number);
 void get_mul(stack_t **stack, unsigned int line_number);
 void get_mod(stack_t **stack, unsigned int line_number);
 void get_rotl(stack_t **stack, unsigned int line_number);
@@ -65,7 +65,7 @@ void get_rotr(stack_t **stack, unsigned int line_number);
 void get_pstr(stack_t **stack, unsigned int line_number);
 void get_free(stack_t *stack);
 void (*operator_function)(stack_t **, unsigned int);
-void (*go(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
+void (*calc(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
 int _isdigit(char *str);
 
 
