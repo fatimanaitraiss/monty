@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pint - function print the top element on the stack
+ * get_pint - function print the top element on the stack
  * @stack: pointer to head of the stack
  * @line_number: the instruction appears
  * Description: 1. pint
@@ -9,7 +9,7 @@
  * 1. upon success, null
  * 2. upon fail, EXIT_FAILURE
  */
-void _pint(stack_t **stack, unsigned int line_number)
+void get_pint(stack_t **stack, unsigned int line_number)
 {
 if (*stack == NULL)
 {

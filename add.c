@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _add - function  adds the top two elements of the stack
+ * get_add - function  adds the top two elements of the stack
  * @stack: pointer to the top of the stack
  * @line_number: the line number appears
  * Return: null on success.
  * EXIT_FAILURE on failure.
  */
-void _add(stack_t **stack, unsigned int line_number)
+void get_add(stack_t **stack, unsigned int line_number)
 {
 stack_t *first, *second;
 

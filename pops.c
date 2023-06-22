@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pop - function pops the top element of the stack
+ * get_pop - function pops the top element of the stack
  * @stack: pointer 2 the top of the stack
  * @line_number: the line of number appears
  * Description: 2. pop
@@ -9,7 +9,7 @@
  * 1. upon success, null
  * 2. upon fail, EXIT_FAILURE
  */
-void _pop(stack_t **stack, unsigned int line_number)
+void get_pop(stack_t **stack, unsigned int line_number)
 {
 stack_t *first;
 

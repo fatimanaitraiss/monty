@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _sub - function subtracts the top two elements of the stack
+ * get_sub - function subtracts the top two elements of the stack
  * @stack: pointer to the top of the stack
  * @line_number: the line number appears
 i * Description: 6. sub
@@ -10,7 +10,7 @@ i * Description: 6. sub
  * 2. upon fail, EXIT_FAILURE
  */
 
-void _sub(stack_t **stack, unsigned int line_number)
+void get_sub(stack_t **stack, unsigned int line_number)
 {
 stack_t *first, *second;
 

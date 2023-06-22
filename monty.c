@@ -28,12 +28,12 @@ break;
 line_count++;
 operator_array[0] = strtok(str, "\n ");
 if (operator_array[0] == NULL)
-_nop(&head, line_count);
+get_nop(&head, line_count);
 else if (strcmp("push", operator_array[0]) == 0)
 {
 temp = strtok(NULL, "\n ");
 
-_push(&head, line_count, temp);
+get_push(&head, line_count, temp);
 }
 else if (operator_array[0] != NULL && operator_array[0][0] != '#')
 {

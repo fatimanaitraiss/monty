@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- *  _rotr - Rotate the right
+ *  get_rotr - Rotate the right
  *  @stack: pointer to the top of the stack
  *  @line_number: Line number appears
  *  Return: Void
  */
 
-void _rotr(stack_t **stack, unsigned int line_number)
+void get_rotr(stack_t **stack, unsigned int line_number)
 {
 stack_t *first, *last;
 

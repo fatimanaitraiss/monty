@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pstr - function  prints ascii value of elements
+ * get_pstr - function  prints ascii value of elements
  * @stack: pointer 2 head of the stack
  * @line_number: the instruction appears
  * Description: 12. pstr
@@ -10,7 +10,7 @@
  * 2. upon fail, EXIT_FAILURE
  */
 
-void _pstr(stack_t **stack, unsigned int line_number)
+void get_pstr(stack_t **stack, unsigned int line_number)
 {
 stack_t *top_node = *stack;
 
