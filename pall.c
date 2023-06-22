@@ -5,7 +5,7 @@
  * @stack: Pointer to the head of the stack
  * @line_number: Line number where the instruction appears
  * Description:  push, pall
- * Return: 
+ * Return:
  * 1. upon success, null
  * 2. upon failure, EXIT_FAILURE
  */

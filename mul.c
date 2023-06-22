@@ -4,7 +4,7 @@
  * get_mul - multiply the top two elements of the stack
  * @stack: pointer to the top of the stack
  * @line_number: line number where the operation is performed
- * Return: 
+ * Return:
  * 1. upon success, null
  * 2. upon failure, EXIT_FAILURE
  */

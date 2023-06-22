@@ -4,7 +4,7 @@
  * get_push - function pushes an element onto top of the stack
  * @stack: pointer to the top of the stack
  * @line_number:  the line number appears
- * @temp: Pointer 2 instruction
+ * @temp: Pointer to instruction
  * Description: 0. push, pall
  * Return: see below
  * 1. upon success, null

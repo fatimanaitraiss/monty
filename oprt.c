@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * go - function calculates arithmetic operations using 2 operands and an operator
+ * go - function calcul arithmetic operations using 2 operands and operator
  * @op_f: Char pointer
  * @l: line
  * @stak: stack
