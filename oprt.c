@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * cal - function calcul arithmetic operations using 2 operands and operator
+ * go - function calculates arithmetic operations using 2 operands and an operator
  * @op_f: Char pointer
  * @l: line
  * @stak: stack
@@ -9,7 +9,7 @@
  */
 
 
-void(*cal(char *op_f, unsigned int l, stack_t **stak))(stack_t**, unsigned int)
+void (*go(char *op_f, unsigned int l, stack_t **stak))(stack_t**, unsigned int)
 {
 int count;
 
